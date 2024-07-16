@@ -12,6 +12,8 @@ const double C = 0.1;
 
 class EngineClass
 {
+public:
+	virtual ~EngineClass() = default;
 protected:
 	virtual void _engineHeating(const double& m_value, const double& v_value) = 0;
 	virtual void _engineCooling() = 0;
